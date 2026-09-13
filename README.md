@@ -15,7 +15,7 @@ NoteForge is an AI-powered student workspace that takes a single lecture PDF and
 ```bash
 git clone https://github.com/your-username/noteforge.git
 cd noteforge
-cp .env.example .env.local  # add your GEMINI_API_KEY
+cp .env.example .env.local
 npm install && npm run dev
 ```
 
