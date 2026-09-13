@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-lora);
+  --font-sans: var(--font-space-grotesk);
+
+  /* Warm paper-like background and text colors */
+  --color-paper: #fcfaf5;
+  --color-ink: #2b2a27;
+  --color-ink-light: #595751;
+  
+  /* Highlighter yellow */
+  --color-highlight: #fef08a;
+  
+  /* Accent colors */
+  --color-accent: #c2410c; /* Rust/orange accent for study vibe */
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans selection:bg-highlight selection:text-ink;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold text-ink;
+  }
+}
